@@ -1,4 +1,5 @@
 'use client'
+
 //Third party imports
 import { SessionProvider } from "next-auth/react"
 

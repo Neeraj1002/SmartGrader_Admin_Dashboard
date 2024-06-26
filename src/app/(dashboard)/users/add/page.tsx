@@ -13,7 +13,9 @@ const AddUser = () => {
     role: '',
     isVerified: false
   }
+  
   return (
+
     <UserAddUpdate user={userData}/>
   )
 }

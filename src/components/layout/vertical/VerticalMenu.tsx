@@ -42,6 +42,7 @@ const VerticalMenu = ({ scrollMenu }: { scrollMenu: (container: any, isPerfectSc
   const ScrollWrapper = isBreakpointReached ? 'div' : PerfectScrollbar
 
   return (
+
     // eslint-disable-next-line lines-around-comment
     /* Custom scrollbar instead of browser scroll, remove if you want browser scroll only */
     <ScrollWrapper
@@ -55,6 +56,7 @@ const VerticalMenu = ({ scrollMenu }: { scrollMenu: (container: any, isPerfectSc
             onScrollY: container => scrollMenu(container, true)
           })}
     >
+
       {/* Incase you also want to scroll NavHeader to scroll with Vertical Menu, remove NavHeader from above and paste it below this comment */}
       {/* Vertical Menu */}
       <Menu
@@ -66,6 +68,7 @@ const VerticalMenu = ({ scrollMenu }: { scrollMenu: (container: any, isPerfectSc
         <SubMenu
           label='Dashboards'
           icon={<i className='ri-home-smile-line' />}
+
           // suffix={<Chip label='5' size='small' color='error' />}
         >
           <MenuItem icon={  <IconContext.Provider value={{ color: '#0ea5e9' }}>
@@ -88,6 +91,7 @@ const VerticalMenu = ({ scrollMenu }: { scrollMenu: (container: any, isPerfectSc
             Logistics
           </MenuItem>
         </SubMenu>
+        
         {/* <SubMenu label='Front Pages' icon={<i className='ri-file-copy-line' />}>
           <MenuItem href={`${process.env.NEXT_PUBLIC_PRO_URL}/front-pages/landing-page`} target='_blank'>
             Landing

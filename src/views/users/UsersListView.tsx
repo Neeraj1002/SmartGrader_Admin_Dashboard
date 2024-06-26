@@ -2,6 +2,7 @@
 
 //Third Party Lib Imports
 import React from 'react'
+
 import Link from 'next/link'
 
 //MUI Imports
@@ -147,12 +148,15 @@ const UserData: UserDataType[] = [
 
 
 const UsersListView = () => {
+  
   const searchQuery = ''
+
   const updateSearchQuery = (newQuery: string) => {
     console.log('searchQuery')
   }
 
   return (
+
     <Container className='mt-5' maxWidth="xl">
     <Card> 
       <CardHeader title='User List' />
