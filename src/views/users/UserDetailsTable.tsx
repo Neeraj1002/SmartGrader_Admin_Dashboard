@@ -112,7 +112,7 @@ const UserDetailsTable: FC<UserDetailsTableProps> = (props: UserDetailsTableProp
                     <MenuItem value='designer'>Designer</MenuItem>
                   </Select>
                   {userData.touched.role && userData.errors.role ? (
-                    <FormHelperText>{userData.errors.role}</FormHelperText>
+                    <FormHelperText>{userData.errors.role as string}</FormHelperText>
                   ) : null}
                 </FormControl>
               </Grid>
