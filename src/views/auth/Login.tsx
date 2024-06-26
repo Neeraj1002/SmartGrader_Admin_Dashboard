@@ -1,8 +1,13 @@
 'use client'
-
+//Third Party Import
 import { useState,  } from 'react'
+import { signIn } from 'next-auth/react'
 import Link from 'next/link'
+import { useFormik } from 'formik'
+import * as Yup from 'yup'
 import { useRouter } from 'next/navigation'
+
+//Material UI Import
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
@@ -11,16 +16,14 @@ import IconButton from '@mui/material/IconButton'
 import InputAdornment from '@mui/material/InputAdornment'
 import Checkbox from '@mui/material/Checkbox'
 import Button from '@mui/material/Button'
+import { FormControl, FormHelperText } from '@mui/material'
+
+//Local Import
 import Logo from '@components/layout/shared/Logo'
 import type { Mode } from '@core/types'
-import { useFormik } from 'formik'
-import * as Yup from 'yup'
-import { FormControl, FormHelperText } from '@mui/material'
-import { signIn } from 'next-auth/react'
 
-interface LoginProps {
-  mode: Mode
-}
+
+
 
 const Login = () => {
   const [isPasswordShown, setIsPasswordShown] = useState(false);
@@ -60,9 +63,11 @@ const Login = () => {
     }
     
   } catch (error) {
+
     console.error('Error during form submission:', error);
   }
   }
+  
   const handleClickShowPassword = () => setIsPasswordShown((show) => !show);
 
   return (

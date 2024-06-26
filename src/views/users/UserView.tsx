@@ -1,8 +1,14 @@
-import { Card, CardContent, CardHeader, Container } from '@mui/material'
+//Thrid Party Lib Imports
 import React, { FC } from 'react'
+
+//MUI Imports
+import { Card, CardContent, CardHeader, Container } from '@mui/material'
+
+//LOcal Imports
 import UserDetailsTable from './UserDetailsTable'
 
 interface userDetails {
+
     // Define the structure of your user data type here
     id: number;
     firstName: string;
@@ -21,6 +27,7 @@ const UserView = (userData: any) => {
   return (
     <div className='page-content'>
       <Container maxWidth='xl'>
+
         {/* <BreadCrumb title="Employee View" pageTitle="Employee Management" /> */}
           <Card>
             <CardHeader className='d-flex align-items-center justify-content-between'>

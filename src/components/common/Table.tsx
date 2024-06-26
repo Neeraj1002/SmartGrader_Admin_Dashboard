@@ -1,22 +1,18 @@
 'use client'
 
-// MUI Imports
-import Typography from '@mui/material/Typography'
-import Card from '@mui/material/Card'
-import Chip from '@mui/material/Chip'
-
-// Third-party Imports
-import classnames from 'classnames'
-
-// Components Imports
-import CustomAvatar from '@core/components/mui/Avatar'
-
-// Styles Imports
-import tableStyles from '@core/styles/table.module.css'
+//React Third Party Lib Imports
 import Link from 'next/link'
 import { FaEye } from 'react-icons/fa6'
 import { MdDelete, MdEdit } from 'react-icons/md'
 import { IconContext } from 'react-icons'
+
+// MUI Imports
+import Typography from '@mui/material/Typography'
+import Chip from '@mui/material/Chip'
+
+
+// Styles Imports
+import tableStyles from '@core/styles/table.module.css'
 import {  UserDataType } from '@/types/pages/tableBodyRowType'
 
 interface TableProps {

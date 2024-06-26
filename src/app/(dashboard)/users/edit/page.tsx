@@ -1,5 +1,8 @@
-import UserAddUpdate from '@/views/users/UserAddUpdate'
+//Thrid party lib imports
 import React from 'react'
+
+//local imports
+import UserAddUpdate from '@/views/users/UserAddUpdate'
 
 const EditUser = () => {
     const userData = {

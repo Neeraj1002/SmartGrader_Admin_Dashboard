@@ -1,5 +1,11 @@
-import UserView from '@/views/users/UserView'
+
+//Third party lib imports 
 import React from 'react'
+
+//local imports
+import UserView from '@/views/users/UserView'
+
+
 const userData = {
   id: 'dbsjdsjds',
   name: 'Jordan Stevenson',
@@ -8,6 +14,7 @@ const userData = {
   role: 'Admin',
   isVerified: true
 }
+
 const ViewUser = () => {
   return (
     <UserView userData = {userData} />

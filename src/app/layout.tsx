@@ -1,5 +1,7 @@
 
+//AuthProvider Import
 import AuthProvider from './provider/authProvider'
+
 // Third-party Imports
 import 'react-perfect-scrollbar/dist/css/styles.css'
 

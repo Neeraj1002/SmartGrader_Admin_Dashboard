@@ -1,8 +1,8 @@
+//Third Party Lib Imports
 import React from 'react'
-import UserDetailsTable from './UserDetailsTable'
-import { Container } from '@mui/material'
-import { DiEnvato } from 'react-icons/di'
 
+//Local Imports
+import UserDetailsTable from './UserDetailsTable'
 
 const UserAddUpdate = (userData: any) => {
   return (

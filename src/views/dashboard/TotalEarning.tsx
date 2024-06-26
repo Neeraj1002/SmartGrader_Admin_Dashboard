@@ -54,6 +54,7 @@ const TotalEarning = () => {
     <Card>
       <CardHeader
         title='Total Earning'
+        
         // action={<OptionMenu iconClassName='text-textPrimary' options={['Last 28 Days', 'Last Month', 'Last Year']} />}
       ></CardHeader>
       <CardContent className='flex flex-col gap-11 md:mbs-2.5'>

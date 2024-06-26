@@ -1,11 +1,16 @@
+//Third Party Lib Imports
+import Link from 'next/link'
+
 // MUI Imports
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
-import CustomAvatar from '@/@core/components/mui/Avatar'
-import Link from 'next/link'
 import { Grid } from '@mui/material'
+
+//Component Imports
+import CustomAvatar from '@/@core/components/mui/Avatar'
+
 
 const Award = () => {
   return (

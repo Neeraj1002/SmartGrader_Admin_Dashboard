@@ -18,6 +18,7 @@ const FooterContent = () => {
 
   return (
     <div>Commented</div>
+    
     // <div
     //   className={classnames(verticalLayoutClasses.footerContent, 'flex items-center justify-between flex-wrap gap-4')}
     // >
